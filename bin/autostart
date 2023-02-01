@@ -1,0 +1,13 @@
+#!/bin/env bash
+run() {
+  if ! pgrep -f $1 ;
+  then
+    "$@"&
+  fi
+}
+
+run nm-applet
+run gammastep
+run ibus-daemon -drx --xim
+picom &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
