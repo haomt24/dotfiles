@@ -2,7 +2,8 @@ local gfs = require("gears.filesystem")
 
 local M = {}
 
-M.terminal = "exo-open --launch TerminalEmulator"
+M.terminal = "xfce4-terminal"
+M.browser = "google-chrome-stable"
 M.editor = "vim"
 M.editor_cmd = M.terminal .. " -e " .. M.editor
 M.mods = {

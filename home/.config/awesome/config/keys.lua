@@ -6,18 +6,9 @@ local lain = require("lain")
 local constants = require("constants")
 local mods = constants.mods
 local terminal = constants.terminal
-
+local browser = constants.browser
 local utils = require("utils")
 local bind = utils.misc.bind
-
-local quake = lain.util.quake({
-	app = terminal,
-	argname = "--name %s",
-	vert = "center",
-	horiz = "center",
-	width = 0.7,
-	height = 0.7,
-})
 
 local GLOBAL_GROUPS = {
 	awesome = {
@@ -70,13 +61,6 @@ local GLOBAL_GROUPS = {
 			},
 			[""] = {
 				{
-					key = "z",
-					action = function()
-						quake:toggle()
-					end,
-					description = "open floating terminal",
-				},
-				{
 					key = "w",
 					action = bind(awful.spawn, { "rofi -show window " }),
 					description = "open window switcher",
@@ -84,11 +68,11 @@ local GLOBAL_GROUPS = {
 				{ key = "x", action = bind(awful.spawn, { "powermenu" }), description = "open powermenu" },
 				{ key = "Return", action = bind(awful.spawn, { terminal }), description = "open terminal" },
 				{ key = "r", action = bind(awful.spawn, { "rofi -show drun -show-icons" }), description = "open apps" },
-				{ key = "f", action = bind(awful.spawn, { "firefox" }), description = "open firefox" },
+				{ key = "b", action = bind(awful.spawn, { browser }), description = "open browser" },
 				{
 					key = "g",
-					action = bind(awful.spawn, { "firefox --private-window" }),
-					description = "open firefox with private window",
+					action = bind(awful.spawn, { browser.." --private-window --incognito" }),
+					description = "open browser with private window",
 				},
 				{ key = "e", action = bind(awful.spawn, { "thunar" }), description = "open thunar" },
 			},

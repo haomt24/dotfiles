@@ -5,9 +5,8 @@ run() {
     "$@"&
   fi
 }
-
 run nm-applet
 run gammastep
 run ibus-daemon -drx --xim
-picom &
+picom --animations --experimental-backends &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

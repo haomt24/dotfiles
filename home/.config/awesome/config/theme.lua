@@ -9,7 +9,7 @@ local utils = require("utils")
 local theme = {}
 
 theme.transparent = "#00000000"
-theme.font = "JetBrainsMono Nerd Font ExtraBold 9"
+theme.font = "JetBrainsMono Nerd Font Bold 9"
 
 theme.black = "#22262e"
 theme.red = "#ff0000"

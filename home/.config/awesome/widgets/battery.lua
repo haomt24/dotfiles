@@ -103,13 +103,13 @@ return function(opts)
 
 		if status == "Charging" then
 			color = beautiful.battery_charging
-			notify(NOTI_TYPE.CHARGING, "(˃̣̣̥ ▿ ˂̣̣̥) Charging...") --🌲
+			notify(NOTI_TYPE.CHARGING, "Battery is charging...") --🌲
 		elseif level <= opts.notification_level.sad then
 			color = beautiful.battery_sad
-			notify(NOTI_TYPE.SAD, "(° o°)! Battery is low!") --📛
+			notify(NOTI_TYPE.SAD, "Battery is low!") --📛
 		elseif level <= opts.notification_level.tired then
 			color = beautiful.battery_tired
-			notify(NOTI_TYPE.TIRED, "('˓˳̮') Battery is getting low!") --⚠️
+			notify(NOTI_TYPE.TIRED, "Battery is getting low!") --⚠️
 		end
 		percentage_text.text = level .. "% "
 		percentage.fg = color
