@@ -1,0 +1,28 @@
+{
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "editor.fontLigatures": true,
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "all",
+    "code-runner.executorMap": {
+        "markdown":"npx @marp-team/marp-cli@latest --bespoke.transition --preview"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "code-runner.runInTerminal": true,
+    "editor.minimap.renderCharacters": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "terminal.external.linuxExec": "xfce4-terminal",
+    "editor.minimap.enabled": false
+}

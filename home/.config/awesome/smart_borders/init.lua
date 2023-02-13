@@ -331,8 +331,8 @@ local function new(config)
 	local border_width = cfg.border_width or dpi(6)
 	local rounded_corner = cfg.rounded_corner or nil
 
-	local color_normal = cfg.color_normal or "#56666f"
-	local color_focus = cfg.color_focus or "#a1bfcf"
+	local color_normal = cfg.color_normal or "#2d3139"
+	local color_focus = cfg.color_focus or "#9ad4e0"
 	local color_hover = cfg.color_hover or nil
 	local color_floating = cfg.color_floating or nil
 	local color_maximized = cfg.color_maximized or nil

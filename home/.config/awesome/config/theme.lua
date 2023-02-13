@@ -24,7 +24,7 @@ theme.blue = "#81a1c1"
 theme.blue2 = "#8caaee"
 theme.blue3 = "#9ad4e0"
 theme.black2 = "#2d3139"
-theme.black3 = "#2d313a"
+theme.black3 = "#2d3239"
 theme.black4 = "#515368"
 -- bg
 theme.bg_normal = theme.black
@@ -45,10 +45,10 @@ theme.spacing_xl = dpi(10)
 
 -- border
 theme.useless_gap = dpi(5)
-theme.border_width = dpi(0)
+theme.border_width = dpi(1)
 theme.border_radius = dpi(0)
-theme.border_focus = theme.bg_focus
-theme.border_normal = theme.bg_normal
+theme.border_focus = theme.transparent
+theme.border_normal = theme.transparent
 -- taglist
 theme.taglist_bg = theme.bg_normal
 theme.taglist_bg_focus = theme.blue2
